@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="row">
+                    <div class="tasks border mt-5 ml-5">
+                            <div class="card border">
+                                <div class="card-body p-3">
+                                    <div style="font-size: 30px" class="clean"></div>
+                                    <div style="font-size: 30px" class="super_clean"></div>
+                                    <div class="row">
+                                        <div style="font-size: 30px" class="not_clean mt-1"></div>
+                                    </div>
+                                    <div class="desc pt-1">Поиск самого маленького числа в массиве</div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+        <script>
+
+          let a = [ 68, 133, 34, 56, 67, 21, 37, 8475, 3356, 23, 23, 78, 65, 67, 100 ];
+          let firstElem = a[0];
+          let lastElem = a[a.length - 1];
+          let result = 0;
+
+          a.forEach(function (temp) {
+
+              if (firstElem >= temp) {
+                  result = temp;
+                  firstElem = temp;
+              }
+              else {
+                result = firstElem
+              }
+              console.log('элементы массива: ' + temp);
+          });
+
+          console.log('самое маленькое число = ' + result);
+          console.log('первое число массива: ' + a[0]);
+          console.log('последнее число массива: ' + lastElem);
+          console.log('длина массива = ' + a.length);
+        </script>
+    </body>
+</html>
+
+
+
